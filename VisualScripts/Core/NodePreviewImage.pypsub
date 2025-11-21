@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PythonPartSubNode>
+    <Node id="NodePreviewImage">
+        <Name>Preview Image</Name>
+        <Description>Preview image in system default viewer</Description>
+        <Category>AI Rendering / Core</Category>
+        <Icon>PreviewImage.png</Icon>
+
+        <InputPorts>
+            <Port id="ImagePath" type="String">
+                <Name>Image Path</Name>
+                <Description>Path to image to preview</Description>
+                <Required>true</Required>
+            </Port>
+
+            <Port id="AutoOpen" type="Boolean">
+                <Name>Auto Open</Name>
+                <Description>Automatically open preview (set false to skip)</Description>
+                <Required>false</Required>
+                <Default>true</Default>
+            </Port>
+        </InputPorts>
+
+        <OutputPorts>
+            <Port id="Previewed" type="Boolean">
+                <Name>Previewed</Name>
+                <Description>True if preview was shown</Description>
+            </Port>
+        </OutputPorts>
+    </Node>
+</PythonPartSubNode>

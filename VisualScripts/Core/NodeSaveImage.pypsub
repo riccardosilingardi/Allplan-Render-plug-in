@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PythonPartSubNode>
+    <Node id="NodeSaveImage">
+        <Name>Save Image</Name>
+        <Description>Save image to disk with custom filename and format</Description>
+        <Category>AI Rendering / Core</Category>
+        <Icon>SaveImage.png</Icon>
+
+        <InputPorts>
+            <Port id="ImagePath" type="String">
+                <Name>Image Path</Name>
+                <Description>Path to input image to save</Description>
+                <Required>true</Required>
+            </Port>
+
+            <Port id="OutputPath" type="String">
+                <Name>Output Path</Name>
+                <Description>Destination file path (e.g., C:\Output\render.png)</Description>
+                <Required>true</Required>
+                <Default>C:\Allplan_Output\render.png</Default>
+                <FileDialog>
+                    <Title>Save Image As</Title>
+                    <Filter>PNG Image (*.png)|*.png|JPEG Image (*.jpg)|*.jpg|All Files (*.*)|*.*</Filter>
+                    <IsSaveDialog>true</IsSaveDialog>
+                </FileDialog>
+            </Port>
+
+            <Port id="Format" type="String">
+                <Name>Format</Name>
+                <Description>Image format (PNG recommended for quality)</Description>
+                <Required>false</Required>
+                <Default>PNG</Default>
+                <Enum>
+                    <Item>PNG</Item>
+                    <Item>JPEG</Item>
+                </Enum>
+            </Port>
+
+            <Port id="Quality" type="Integer">
+                <Name>JPEG Quality</Name>
+                <Description>Quality for JPEG format (1-100, higher is better)</Description>
+                <Required>false</Required>
+                <Default>95</Default>
+                <MinValue>1</MinValue>
+                <MaxValue>100</MaxValue>
+                <Visible>Format=="JPEG"</Visible>
+            </Port>
+
+            <Port id="AddTimestamp" type="Boolean">
+                <Name>Add Timestamp</Name>
+                <Description>Add timestamp to filename to avoid overwriting</Description>
+                <Required>false</Required>
+                <Default>false</Default>
+            </Port>
+        </InputPorts>
+
+        <OutputPorts>
+            <Port id="SavedPath" type="String">
+                <Name>Saved Path</Name>
+                <Description>Final saved file path</Description>
+            </Port>
+
+            <Port id="FileSize" type="Integer">
+                <Name>File Size (KB)</Name>
+                <Description>File size in kilobytes</Description>
+            </Port>
+
+            <Port id="Success" type="Boolean">
+                <Name>Success</Name>
+                <Description>True if save successful</Description>
+            </Port>
+        </OutputPorts>
+    </Node>
+</PythonPartSubNode>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Localization>
+    <Language id="en_US">
+        <Text id="Name">Preview Image</Text>
+        <Text id="Description">Preview image in system default viewer</Text>
+        <Text id="ImagePath">Image Path</Text>
+        <Text id="AutoOpen">Auto Open</Text>
+        <Text id="Previewed">Previewed</Text>
+    </Language>
+
+    <Language id="de_DE">
+        <Text id="Name">Bild Vorschau</Text>
+        <Text id="Description">Bildvorschau im Standard-Viewer des Systems</Text>
+        <Text id="ImagePath">Bildpfad</Text>
+        <Text id="AutoOpen">Automatisch Öffnen</Text>
+        <Text id="Previewed">Vorschau Angezeigt</Text>
+    </Language>
+
+    <Language id="it_IT">
+        <Text id="Name">Anteprima Immagine</Text>
+        <Text id="Description">Anteprima immagine nel visualizzatore di sistema predefinito</Text>
+        <Text id="ImagePath">Percorso Immagine</Text>
+        <Text id="AutoOpen">Apertura Automatica</Text>
+        <Text id="Previewed">Antepri
+
+ma Mostrata</Text>
+    </Language>
+</Localization>

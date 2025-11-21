@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PythonPartSubNode>
+    <Node id="NodeAIRenderBasic">
+        <Name>AI Render Basic</Name>
+        <Description>Generate photorealistic architectural renders using Nano Banana / Nano Banana Pro</Description>
+        <Category>AI Rendering</Category>
+        <Icon>AIRender.png</Icon>
+
+        <InputPorts>
+            <Port id="InputImagePath" type="String">
+                <Name>Input Image Path</Name>
+                <Description>Path to input viewport image or sketch</Description>
+                <Required>true</Required>
+            </Port>
+
+            <Port id="Prompt" type="String">
+                <Name>Prompt</Name>
+                <Description>Describe the desired rendering (e.g., "Modern glass building with landscaping and people")</Description>
+                <Required>true</Required>
+                <Default>Photorealistic architectural rendering with detailed materials and realistic lighting</Default>
+                <MultiLine>true</MultiLine>
+                <Rows>3</Rows>
+            </Port>
+
+            <Port id="StylePreset" type="String">
+                <Name>Style Preset</Name>
+                <Description>Architectural style preset to apply</Description>
+                <Required>false</Required>
+                <Default>Modern</Default>
+                <Enum>
+                    <Item>None</Item>
+                    <Item>Modern</Item>
+                    <Item>Classical</Item>
+                    <Item>Industrial</Item>
+                    <Item>Parametric</Item>
+                    <Item>Sustainable</Item>
+                    <Item>Minimalist</Item>
+                    <Item>Brutalist</Item>
+                    <Item>Organic</Item>
+                </Enum>
+            </Port>
+
+            <Port id="LightingPreset" type="String">
+                <Name>Lighting Preset</Name>
+                <Description>Lighting condition / time of day</Description>
+                <Required>false</Required>
+                <Default>Noon</Default>
+                <Enum>
+                    <Item>None</Item>
+                    <Item>Dawn</Item>
+                    <Item>Noon</Item>
+                    <Item>Sunset</Item>
+                    <Item>Night</Item>
+                    <Item>Overcast</Item>
+                    <Item>Dramatic</Item>
+                </Enum>
+            </Port>
+
+            <Port id="Resolution" type="String">
+                <Name>Resolution</Name>
+                <Description>Target output resolution (higher = better quality but slower and more expensive)</Description>
+                <Required>false</Required>
+                <Default>2K</Default>
+                <Enum>
+                    <Item>1K</Item>
+                    <Item>2K</Item>
+                    <Item>4K</Item>
+                </Enum>
+            </Port>
+
+            <Port id="UseProModel" type="Boolean">
+                <Name>Use Nano Banana Pro</Name>
+                <Description>Use Nano Banana Pro for highest quality (3-6x more expensive: $0.13-0.24 vs $0.039 per image)</Description>
+                <Required>false</Required>
+                <Default>false</Default>
+            </Port>
+        </InputPorts>
+
+        <OutputPorts>
+            <Port id="RenderedImagePath" type="String">
+                <Name>Rendered Image Path</Name>
+                <Description>Path to the generated rendered image</Description>
+            </Port>
+
+            <Port id="Cost" type="Float">
+                <Name>Cost (USD)</Name>
+                <Description>API cost for this render in USD</Description>
+            </Port>
+
+            <Port id="ProcessTime" type="Float">
+                <Name>Process Time (sec)</Name>
+                <Description>Generation time in seconds</Description>
+            </Port>
+
+            <Port id="Success" type="Boolean">
+                <Name>Success</Name>
+                <Description>True if render generated successfully</Description>
+            </Port>
+        </OutputPorts>
+    </Node>
+</PythonPartSubNode>
