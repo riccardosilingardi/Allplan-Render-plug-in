@@ -47,8 +47,10 @@ class Config:
             Path("../.env"),
             # VisualScripts directory
             Path(__file__).parent.parent / ".env",
-            # Allplan Std directory
-            Path("C:/ProgramData/Nemetschek/Allplan/2025/Std/VisualScripts/AllplanRenderAI/.env"),
+            # Allplan Etc directory (primary)
+            Path("C:/ProgramData/Nemetschek/Allplan/2025/Etc/VisualScripts/AllplanAIRender/.env"),
+            # Allplan Std directory (fallback)
+            Path("C:/ProgramData/Nemetschek/Allplan/2025/Std/VisualScripts/AllplanAIRender/.env"),
         ]
 
         for path in possible_paths:
