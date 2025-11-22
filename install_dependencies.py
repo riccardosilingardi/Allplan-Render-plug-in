@@ -40,12 +40,35 @@ def get_allplan_paths():
 
     return None, None
 
+def check_allplan_running():
+    """Check if Allplan processes are running on Windows"""
+    try:
+        result = subprocess.run(
+            ["tasklist", "/FI", "IMAGENAME eq Allplan.exe"],
+            capture_output=True,
+            text=True
+        )
+        return "Allplan.exe" in result.stdout
+    except:
+        return False
+
+
 def install_packages(python_exe, target_dir):
     """Install packages using pip"""
 
     print("\n" + "="*60)
     print("Installing Python Dependencies for Allplan Render AI")
     print("="*60 + "\n")
+
+    # Check if Allplan is running
+    if check_allplan_running():
+        print("⚠ WARNING: Allplan appears to be running!")
+        print("  It's recommended to close Allplan before installing dependencies.")
+        response = input("\nDo you want to continue anyway? (y/n): ")
+        if response.lower() != 'y':
+            print("\nInstallation cancelled. Please close Allplan and run this script again.")
+            return False
+    print("")
 
     # Read requirements
     with open("requirements.txt", "r") as f:
@@ -59,10 +82,12 @@ def install_packages(python_exe, target_dir):
 
         if target_dir:
             # Install to Allplan's site-packages
+            # Use --ignore-installed to avoid permission errors when upgrading locked files
             cmd = [
                 python_exe, "-m", "pip", "install",
                 f"--target={target_dir}",
                 "--upgrade",
+                "--ignore-installed",
                 package
             ]
         else:
