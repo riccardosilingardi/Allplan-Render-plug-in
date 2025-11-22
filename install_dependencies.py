@@ -105,6 +105,28 @@ def install_packages(python_exe, target_dir):
 
     return True
 
+def fix_google_namespace(target_dir):
+    """Create google/__init__.py to fix namespace package imports"""
+
+    if not target_dir:
+        return
+
+    google_init = os.path.join(target_dir, "google", "__init__.py")
+
+    # Check if it already exists
+    if os.path.exists(google_init):
+        return
+
+    try:
+        # Create the __init__.py file
+        os.makedirs(os.path.dirname(google_init), exist_ok=True)
+        with open(google_init, "w") as f:
+            f.write("# Namespace package\n")
+            f.write("__path__ = __import__('pkgutil').extend_path(__path__, __name__)\n")
+        print(f"✓ Created namespace package file: {google_init}")
+    except Exception as e:
+        print(f"⚠ Could not create google/__init__.py: {e}")
+
 def create_directories():
     """Create necessary output directories"""
 
@@ -273,6 +295,9 @@ def main():
     if not success:
         print("\n✗ Installation failed. Please check errors above.")
         sys.exit(1)
+
+    # Fix Google namespace package imports
+    fix_google_namespace(site_packages)
 
     # Create directories
     create_directories()
