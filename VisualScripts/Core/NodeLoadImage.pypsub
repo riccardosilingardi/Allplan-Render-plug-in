@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PythonPartSubNode>
+    <Node id="NodeLoadImage">
+        <Name>Load Image</Name>
+        <Description>Load an image file from disk</Description>
+        <Category>AI Rendering / Core</Category>
+        <Icon>LoadImage.png</Icon>
+
+        <InputPorts>
+            <Port id="FilePath" type="String">
+                <Name>File Path</Name>
+                <Description>Path to the image file to load</Description>
+                <Required>true</Required>
+                <Default></Default>
+                <FileDialog>
+                    <Title>Select Image File</Title>
+                    <Filter>Image Files (*.png *.jpg *.jpeg *.tiff *.bmp)|*.png;*.jpg;*.jpeg;*.tiff;*.bmp|All Files (*.*)|*.*</Filter>
+                </FileDialog>
+            </Port>
+
+            <Port id="AutoResize" type="Boolean">
+                <Name>Auto Resize</Name>
+                <Description>Automatically resize the image to target resolution</Description>
+                <Required>false</Required>
+                <Default>false</Default>
+            </Port>
+
+            <Port id="TargetResolution" type="String">
+                <Name>Target Resolution</Name>
+                <Description>Target resolution for auto-resize (1K=1024px, 2K=2048px, 4K=4096px)</Description>
+                <Required>false</Required>
+                <Default>2K</Default>
+                <Enum>
+                    <Item>1K</Item>
+                    <Item>2K</Item>
+                    <Item>4K</Item>
+                </Enum>
+                <Visible>AutoResize</Visible>
+            </Port>
+        </InputPorts>
+
+        <OutputPorts>
+            <Port id="ImagePath" type="String">
+                <Name>Image Path</Name>
+                <Description>Path to the loaded image (temporary location)</Description>
+            </Port>
+
+            <Port id="Width" type="Integer">
+                <Name>Width</Name>
+                <Description>Image width in pixels</Description>
+            </Port>
+
+            <Port id="Height" type="Integer">
+                <Description>Image height in pixels</Description>
+                <Name>Height</Name>
+            </Port>
+
+            <Port id="Success" type="Boolean">
+                <Name>Success</Name>
+                <Description>True if image loaded successfully, False otherwise</Description>
+            </Port>
+        </OutputPorts>
+    </Node>
+</PythonPartSubNode>

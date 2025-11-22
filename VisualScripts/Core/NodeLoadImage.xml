@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Localization>
+    <Language id="en_US">
+        <Text id="Name">Load Image</Text>
+        <Text id="Description">Load an image file from disk</Text>
+        <Text id="Category">AI Rendering / Core</Text>
+
+        <Text id="FilePath">File Path</Text>
+        <Text id="FilePathDesc">Path to the image file to load</Text>
+
+        <Text id="AutoResize">Auto Resize</Text>
+        <Text id="AutoResizeDesc">Automatically resize the image to target resolution</Text>
+
+        <Text id="TargetResolution">Target Resolution</Text>
+        <Text id="TargetResolutionDesc">Target resolution for auto-resize</Text>
+
+        <Text id="ImagePath">Image Path</Text>
+        <Text id="ImagePathDesc">Path to the loaded image</Text>
+
+        <Text id="Width">Width (pixels)</Text>
+        <Text id="Height">Height (pixels)</Text>
+        <Text id="Success">Success</Text>
+    </Language>
+
+    <Language id="de_DE">
+        <Text id="Name">Bild Laden</Text>
+        <Text id="Description">Bilddatei von der Festplatte laden</Text>
+        <Text id="Category">AI Rendering / Kern</Text>
+
+        <Text id="FilePath">Dateipfad</Text>
+        <Text id="FilePathDesc">Pfad zur zu ladenden Bilddatei</Text>
+
+        <Text id="AutoResize">Automatische Größenanpassung</Text>
+        <Text id="AutoResizeDesc">Bild automatisch auf Zielauflösung skalieren</Text>
+
+        <Text id="TargetResolution">Zielauflösung</Text>
+        <Text id="TargetResolutionDesc">Zielauflösung für automatische Größenanpassung</Text>
+
+        <Text id="ImagePath">Bildpfad</Text>
+        <Text id="ImagePathDesc">Pfad zum geladenen Bild</Text>
+
+        <Text id="Width">Breite (Pixel)</Text>
+        <Text id="Height">Höhe (Pixel)</Text>
+        <Text id="Success">Erfolg</Text>
+    </Language>
+
+    <Language id="it_IT">
+        <Text id="Name">Carica Immagine</Text>
+        <Text id="Description">Carica un file immagine dal disco</Text>
+        <Text id="Category">AI Rendering / Core</Text>
+
+        <Text id="FilePath">Percorso File</Text>
+        <Text id="FilePathDesc">Percorso del file immagine da caricare</Text>
+
+        <Text id="AutoResize">Ridimensionamento Automatico</Text>
+        <Text id="AutoResizeDesc">Ridimensiona automaticamente l'immagine alla risoluzione target</Text>
+
+        <Text id="TargetResolution">Risoluzione Target</Text>
+        <Text id="TargetResolutionDesc">Risoluzione target per il ridimensionamento automatico</Text>
+
+        <Text id="ImagePath">Percorso Immagine</Text>
+        <Text id="ImagePathDesc">Percorso dell'immagine caricata</Text>
+
+        <Text id="Width">Larghezza (pixel)</Text>
+        <Text id="Height">Altezza (pixel)</Text>
+        <Text id="Success">Successo</Text>
+    </Language>
+</Localization>

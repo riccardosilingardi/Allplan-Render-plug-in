@@ -1,0 +1,18 @@
+# Core Image Processing
+Pillow>=10.0.0
+opencv-python-headless>=4.8.0
+numpy>=1.24.0
+
+# Google AI APIs
+google-generativeai>=0.8.0
+google-cloud-aiplatform>=1.65.0
+
+# Google Maps
+googlemaps>=4.10.0
+
+# Utilities
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Optional Development
+pytest>=7.4.0

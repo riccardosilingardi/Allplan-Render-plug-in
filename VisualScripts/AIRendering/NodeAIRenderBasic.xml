@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Localization>
+    <Language id="en_US">
+        <Text id="Name">AI Render Basic</Text>
+        <Text id="Description">Generate photorealistic architectural renders using Nano Banana / Nano Banana Pro</Text>
+        <Text id="InputImagePath">Input Image Path</Text>
+        <Text id="Prompt">Prompt</Text>
+        <Text id="StylePreset">Style Preset</Text>
+        <Text id="LightingPreset">Lighting Preset</Text>
+        <Text id="Resolution">Resolution</Text>
+        <Text id="UseProModel">Use Nano Banana Pro</Text>
+        <Text id="RenderedImagePath">Rendered Image Path</Text>
+        <Text id="Cost">Cost (USD)</Text>
+        <Text id="ProcessTime">Process Time (sec)</Text>
+        <Text id="Success">Success</Text>
+    </Language>
+
+    <Language id="de_DE">
+        <Text id="Name">KI-Rendering Basis</Text>
+        <Text id="Description">Fotorealistische architektonische Renderings mit Nano Banana / Nano Banana Pro generieren</Text>
+        <Text id="InputImagePath">Eingabebild-Pfad</Text>
+        <Text id="Prompt">Eingabeaufforderung</Text>
+        <Text id="StylePreset">Stil-Voreinstellung</Text>
+        <Text id="LightingPreset">Beleuchtungs-Voreinstellung</Text>
+        <Text id="Resolution">Auflösung</Text>
+        <Text id="UseProModel">Nano Banana Pro Verwenden</Text>
+        <Text id="RenderedImagePath">Gerendertes Bild-Pfad</Text>
+        <Text id="Cost">Kosten (USD)</Text>
+        <Text id="ProcessTime">Bearbeitungszeit (Sek)</Text>
+        <Text id="Success">Erfolg</Text>
+    </Language>
+
+    <Language id="it_IT">
+        <Text id="Name">Rendering AI Base</Text>
+        <Text id="Description">Genera rendering architettonici fotorealistici con Nano Banana / Nano Banana Pro</Text>
+        <Text id="InputImagePath">Percorso Immagine Input</Text>
+        <Text id="Prompt">Prompt</Text>
+        <Text id="StylePreset">Preset Stile</Text>
+        <Text id="LightingPreset">Preset Illuminazione</Text>
+        <Text id="Resolution">Risoluzione</Text>
+        <Text id="UseProModel">Usa Nano Banana Pro</Text>
+        <Text id="RenderedImagePath">Percorso Immagine Renderizzata</Text>
+        <Text id="Cost">Costo (USD)</Text>
+        <Text id="ProcessTime">Tempo Processo (sec)</Text>
+        <Text id="Success">Successo</Text>
+    </Language>
+</Localization>

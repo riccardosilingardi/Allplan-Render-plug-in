@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Localization>
+    <Language id="en_US">
+        <Text id="Name">Save Image</Text>
+        <Text id="Description">Save image to disk with custom filename and format</Text>
+        <Text id="OutputPath">Output Path</Text>
+        <Text id="Format">Format</Text>
+        <Text id="Quality">JPEG Quality</Text>
+        <Text id="AddTimestamp">Add Timestamp</Text>
+        <Text id="SavedPath">Saved Path</Text>
+        <Text id="FileSize">File Size (KB)</Text>
+        <Text id="Success">Success</Text>
+    </Language>
+
+    <Language id="de_DE">
+        <Text id="Name">Bild Speichern</Text>
+        <Text id="Description">Bild auf Festplatte speichern mit benutzerdefiniertem Dateinamen und Format</Text>
+        <Text id="OutputPath">Ausgabepfad</Text>
+        <Text id="Format">Format</Text>
+        <Text id="Quality">JPEG-Qualität</Text>
+        <Text id="AddTimestamp">Zeitstempel Hinzufügen</Text>
+        <Text id="SavedPath">Gespeicherter Pfad</Text>
+        <Text id="FileSize">Dateigröße (KB)</Text>
+        <Text id="Success">Erfolg</Text>
+    </Language>
+
+    <Language id="it_IT">
+        <Text id="Name">Salva Immagine</Text>
+        <Text id="Description">Salva immagine su disco con nome file e formato personalizzati</Text>
+        <Text id="OutputPath">Percorso Output</Text>
+        <Text id="Format">Formato</Text>
+        <Text id="Quality">Qualità JPEG</Text>
+        <Text id="AddTimestamp">Aggiungi Timestamp</Text>
+        <Text id="SavedPath">Percorso Salvato</Text>
+        <Text id="FileSize">Dimensione File (KB)</Text>
+        <Text id="Success">Successo</Text>
+    </Language>
+</Localization>
